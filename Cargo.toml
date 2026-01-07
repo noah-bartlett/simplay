@@ -1,0 +1,15 @@
+[package]
+name = "simplay"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5.20", features = ["derive"] }
+md5 = "0.7"
+rand = "0.8"
+reqwest = { version = "0.12", features = ["blocking", "json", "rustls-tls"] }
+rpassword = "7.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"

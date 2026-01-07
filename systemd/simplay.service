@@ -1,0 +1,13 @@
+[Unit]
+Description=Simplay Navidrome backend player
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=simplay --daemon
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
